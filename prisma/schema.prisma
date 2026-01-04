@@ -14,7 +14,7 @@ model HelpRequest {
   lat         Float
   lng         Float
   category    String   @default("OTHER")
-  urgency     Int      @default(1)
+  urgency     Int      @default(1) @db.SmallInt
   summary     String   @default("Incident")
   status      String   @default("OPEN")
   createdAt   DateTime @default(now())
